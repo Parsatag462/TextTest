@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { FormHelperText } from '@mui/material';
 
 function Copyright(props) {
   return (
@@ -79,6 +80,9 @@ export default function TextTest() {
                   id="password"
                   autoComplete="new-password"
                 />
+                <FormHelperText id="component-helper-text">
+                Your password should contain at least 1 special character/number, 1 Upper Case letter, and be at least 10 characters.
+                </FormHelperText>
               </Grid>
               <Grid item xs={12}>
                 <FormControlLabel
