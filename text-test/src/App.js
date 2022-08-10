@@ -17,7 +17,8 @@ class App extends React.Component {
       username: Yup.string()
         .required('Username is required')
         .min(10, 'Username must be at least 10 characters')
-        .max(20, 'Username must not exceed 20 characters'),
+        .max(20, 'Username must not exceed 20 characters')
+        .matches(9, 'Username must have at least one number in'),
       email: Yup.string()
         .required('Email is required')
         .email('Email is invalid'),
